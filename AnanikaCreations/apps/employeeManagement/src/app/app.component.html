@@ -1,0 +1,18 @@
+<tui-root>
+
+
+  <nav tuiTabBar
+       class="tabs">
+    <button *ngFor="let item of items"
+            tuiTabBarItem
+            type="button"
+            [icon]="item.icon"
+            [routerLink]="item.route">
+      {{ item.text }}
+    </button>
+  </nav>
+
+
+  <router-outlet></router-outlet>
+
+</tui-root>

@@ -2,11 +2,5 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/employee-management/.vs
-/employee-management/.vscode
-/employee-management/src/.vs
-/.vs
-
-.nx/installation
-.nx/cache
-.nx/workspace-data
+/AnanikaCreations/.vscode
+/AnanikaCreations/apps/employeeManagement/.vs
