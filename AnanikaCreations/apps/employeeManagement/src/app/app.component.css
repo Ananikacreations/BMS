@@ -1,3 +1,21 @@
-tui-tabs {
-  margin: 20px;
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+app-header {
+  /* Adjust as needed */
+  padding-bottom: 50px; /* Give space for the footer if necessary */
+}
+
+main {
+  flex-grow: 1; /* Ensures the main content area expands to fill remaining space */
+}
+
+footer {
+  /* Styles for footer */
+  padding: 1rem;
+  background-color: #f8f8f8; /* Adjust as necessary */
+  /* Ensure footer is pushed to bottom if content is less */
+  margin-top: auto;
 }

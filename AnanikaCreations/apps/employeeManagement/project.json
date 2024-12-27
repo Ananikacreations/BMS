@@ -22,21 +22,21 @@
         "assets": [
           {
             "glob": "**/*",
-			      "input": "node_modules/@taiga-ui/icons/src",
-            "output": "assets/taiga-ui/icons"
+            "input": "apps/your-app/src/assets",
+            "output": "assets"
           },
           {
-            "glob": "**/*",
-            "input": "node_modules/@taiga-ui/icons/src",
-            "output": "assets/taiga-ui/icons"
+            "glob": "favicon.ico",
+            "input": "apps/your-app/src",
+            "output": "/"
           }
         ],
         "styles": [
-          "node_modules/@taiga-ui/core/styles/taiga-ui-theme.less",
-          "node_modules/@taiga-ui/core/styles/taiga-ui-fonts.less",
           "apps/employeeManagement/src/styles.css"
         ],
-        "scripts": []
+        "scripts": [
+          "node_modules/flowbite/dist/flowbite.js"
+        ]
       },
       "configurations": {
         "production": {

@@ -1,0 +1,55 @@
+<div class="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 flex items-center justify-center min-h-screen">
+    <div class="grid grid-cols-1 md:grid-cols-2 w-full max-w-5xl bg-white rounded-lg shadow-md">
+        <!-- Left Side: Form -->
+        <div class="p-8 md:pr-12">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Sign in to your account</h2>
+            <form class="max-w-md mx-auto">
+                <!-- Email Field -->
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                    <label for="floating_email" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0">Email address</label>
+                </div>
+
+                <!-- Password Field -->
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                    <label for="floating_password" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0">Password</label>
+                </div>
+
+                <!-- Remember Me Checkbox -->
+                <div class="flex items-center mb-6">
+                    <input id="remember_me" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 focus:ring-2">
+                    <label for="remember_me" class="ml-2 text-sm text-gray-900">Remember me</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-3 mb-6">
+                    Submit
+                </button>
+
+                <!-- Divider -->
+                <div class="flex items-center">
+                    <hr class="w-full border-gray-300">
+                    <span class="px-3 text-gray-500 text-sm">or</span>
+                    <hr class="w-full border-gray-300">
+                </div>
+
+                <!-- Sign in with Google -->
+                <button type="button" class="w-full flex items-center justify-center bg-white border border-gray-300 text-gray-900 font-medium rounded-lg text-sm px-5 py-3 mt-6 hover:bg-gray-100">
+                    <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21.805 10.023h-9.91v4.143h5.656c-.242 1.182-.927 2.184-1.996 2.853v2.366h3.227c1.883-1.737 2.979-4.292 2.979-7.079c0-.74-.08-1.459-.223-2.147Z"></path>
+                        <path d="M12.5 20.794c2.593 0 4.774-.857 6.363-2.33l-3.227-2.365c-.885.594-2.017.946-3.136.946c-2.414 0-4.466-1.63-5.196-3.826H4.044v2.402c1.574 3.144 4.867 5.173 8.456 5.173Z"></path>
+                        <path d="M7.304 12c-.194-.596-.304-1.23-.304-1.882c0-.652.11-1.286.304-1.882V6.835H4.045c-.583 1.176-.916 2.508-.916 4.117c0 1.609.333 2.941.916 4.118l3.259-2.47Z"></path>
+                        <path d="M12.5 7.087c1.258 0 2.388.433 3.28 1.283l2.462-2.47c-1.588-1.482-3.769-2.4-6.272-2.4c-3.59 0-6.883 2.029-8.456 5.174l3.259 2.47c.73-2.196 2.782-3.827 5.196-3.827Z"></path>
+                    </svg>
+                    Sign in with Google
+                </button>
+            </form>
+        </div>
+
+        <!-- Right Side: Image -->
+        <div class="flex items-center justify-center bg-gradient-to-tr from-blue-100 to-blue-300">
+            <img src="https://via.placeholder.com/500x500" alt="Sign in" class="w-3/4 h-auto rounded-lg shadow-lg">
+        </div>
+    </div>
+</div>
