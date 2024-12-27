@@ -11,19 +11,19 @@
 To run the dev server for your app, use:
 
 ```sh
-npx nx serve employeeManagement
+npx nx serve site
 ```
 
 To create a production bundle:
 
 ```sh
-npx nx build employeeManagement
+npx nx build site
 ```
 
 To see all available targets to run for a project, run:
 
 ```sh
-npx nx show project employeeManagement
+npx nx show project site
 ```
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
