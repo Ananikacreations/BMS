@@ -22,7 +22,9 @@
           }
         ],
         "styles": ["apps/business-development-system/src/styles.css"],
-        "scripts": []
+        "scripts": [
+          "node_modules/flowbite/dist/flowbite.js"
+        ]
       },
       "configurations": {
         "production": {

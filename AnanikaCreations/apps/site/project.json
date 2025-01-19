@@ -32,8 +32,7 @@
           }
         ],
         "styles": [
-          "apps/site/src/styles.css",
-          "apps/business-development-system/src/styles.css"
+          "apps/site/src/styles.css"
         ],
         "scripts": [
           "node_modules/flowbite/dist/flowbite.js"

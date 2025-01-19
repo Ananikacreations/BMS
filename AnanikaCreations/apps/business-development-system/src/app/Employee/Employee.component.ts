@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-employee',
+  selector: 'employee',
   imports: [FormsModule , CommonModule],
   standalone: true,  // This makes the component standalone.
   templateUrl: './employee.component.html',
@@ -18,28 +18,207 @@ export class EmployeeComponent implements OnInit {
 
   ngOnInit(): void {
     // Initialize with some sample data or fetch from an API
-    this.employees = [
+    this.employees =[
       {
-        firstName: 'John',
-        lastName: 'Doe',
-        address: '123 Main St',
-        phoneNumber: '123-456-7890',
-        accountNumber: '123456',
-        email: 'john.doe@example.com',
-        department: 'IT',
-        picture: 'https://via.placeholder.com/150'
+        "id": 1,
+        "name": "Neil Sims",
+        "avatar": "neil-sims.png",
+        "email": "neil.sims@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Front-end developer",
+        "country": "United States",
+        "status": "Active"
       },
       {
-        firstName: 'Jane',
-        lastName: 'Smith',
-        address: '456 Oak St',
-        phoneNumber: '234-567-8901',
-        accountNumber: '654321',
-        email: 'jane.smith@example.com',
-        department: 'HR',
-        picture: 'https://via.placeholder.com/150'
+        "id": 2,
+        "name": "Roberta Casas",
+        "avatar": "roberta-casas.png",
+        "email": "roberta.casas@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Designer",
+        "country": "Spain",
+        "status": "Active"
+      },
+      {
+        "id": 3,
+        "name": "Michael Gough",
+        "avatar": "michael-gough.png",
+        "email": "michael.gough@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "React developer",
+        "country": "United Kingdom",
+        "status": "Active"
+      },
+      {
+        "id": 4,
+        "name": "Jese Leos",
+        "avatar": "jese-leos.png",
+        "email": "jese.leos@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Marketing",
+        "country": "United States",
+        "status": "Active"
+      },
+      {
+        "id": 5,
+        "name": "Bonnie Green",
+        "avatar": "bonnie-green.png",
+        "email": "bonnie.green@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "UI/UX Engineer",
+        "country": "Australia",
+        "status": "Offline"
+      },
+      {
+        "id": 6,
+        "name": "Thomas Lean",
+        "avatar": "thomas-lean.png",
+        "email": "thomas.lean@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Vue developer",
+        "country": "Germany",
+        "status": "Active"
+      },
+      {
+        "id": 7,
+        "name": "Helene Engels",
+        "avatar": "helene-engels.png",
+        "email": "helene.engels@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Product owner",
+        "country": "Canada",
+        "status": "Active"
+      },
+      {
+        "id": 8,
+        "name": "Lana Byrd",
+        "avatar": "lana-byrd.png",
+        "email": "lana.byrd@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Designer",
+        "country": "United States",
+        "status": "Active"
+      },
+      {
+        "id": 9,
+        "name": "Leslie Livingston",
+        "avatar": "leslie-livingston.png",
+        "email": "leslie.livingston@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Web developer",
+        "country": "France",
+        "status": "Offline"
+      },
+      {
+        "id": 10,
+        "name": "Robert Brown",
+        "avatar": "robert-brown.png",
+        "email": "robert.brown@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Laravel developer",
+        "country": "Russia",
+        "status": "Active"
+      },
+      {
+        "id": 11,
+        "name": "Neil Sims",
+        "avatar": "neil-sims.png",
+        "email": "neil.sims@flowbite.com",
+        "position": "Front-end developer",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "country": "United States",
+        "status": "Active"
+      },
+      {
+        "id": 12,
+        "name": "Roberta Casas",
+        "avatar": "roberta-casas.png",
+        "email": "roberta.casas@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Designer",
+        "country": "Spain",
+        "status": "Active"
+      },
+      {
+        "id": 13,
+        "name": "Michael Gough",
+        "avatar": "michael-gough.png",
+        "email": "michael.gough@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "React developer",
+        "country": "United Kingdom",
+        "status": "Active"
+      },
+      {
+        "id": 14,
+        "name": "Jese Leos",
+        "avatar": "jese-leos.png",
+        "email": "jese.leos@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Marketing",
+        "country": "United States",
+        "status": "Active"
+      },
+      {
+        "id": 15,
+        "name": "Bonnie Green",
+        "avatar": "bonnie-green.png",
+        "email": "bonnie.green@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "UI/UX Engineer",
+        "country": "Australia",
+        "status": "Offline"
+      },
+      {
+        "id": 16,
+        "name": "Thomas Lean",
+        "avatar": "thomas-lean.png",
+        "email": "thomas.lean@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Vue developer",
+        "country": "Germany",
+        "status": "Active"
+      },
+      {
+        "id": 17,
+        "name": "Helene Engels",
+        "avatar": "helene-engels.png",
+        "email": "helene.engels@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Product owner",
+        "country": "Canada",
+        "status": "Active"
+      },
+      {
+        "id": 18,
+        "name": "Lana Byrd",
+        "avatar": "lana-byrd.png",
+        "email": "lana.byrd@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Designer",
+        "country": "United States",
+        "status": "Active"
+      },
+      {
+        "id": 19,
+        "name": "Leslie Livingston",
+        "avatar": "leslie-livingston.png",
+        "email": "leslie.livingston@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Web developer",
+        "country": "France",
+        "status": "Offline"
+      },
+      {
+        "id": 20,
+        "name": "Robert Brown",
+        "avatar": "robert-brown.png",
+        "email": "robert.brown@flowbite.com",
+        "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
+        "position": "Laravel developer",
+        "country": "Russia",
+        "status": "Active"
       }
-      // Add more sample employees
     ];
   }
 
@@ -56,17 +235,6 @@ export class EmployeeComponent implements OnInit {
     const modal = document.getElementById('addEmployeeModal');
     if (modal) {
       modal.classList.add('hidden');
-    }
-  }
-
-  onFileChange(event: any): void {
-    const file = event.target.files[0]; // Get the first file selected
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = () => {
-        this.newEmployee.picture = reader.result as string;  // Set the employee's picture to the file's base64 string
-      };
-      reader.readAsDataURL(file);  // Read the file as a base64 string
     }
   }
 

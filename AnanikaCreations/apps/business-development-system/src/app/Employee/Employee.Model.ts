@@ -1,10 +1,10 @@
 export class Employee {
-  firstName: string = '';
-  lastName: string = '';
+  id : number =0; 
+  name: string = '';
+  avatar: string = '';
   email: string = '';
-  department: string = '';
-  address: string = '';
-  phoneNumber: string = '';
-  accountNumber: string = '';
-  picture: string = '';
+  biography: string = '';
+  position: string = '';
+  country: string = '';
+  status: string = '';
 }
